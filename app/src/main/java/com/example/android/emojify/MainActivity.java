@@ -68,13 +68,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Bind the views
-        ButterKnife.bind(this);
+        ButterKnife.bind(this);// Set up Timber
     }
 
     /**
      * OnClick method for "Emojify Me!" Button. Launches the camera app.
-     *
-     * @param view The emojify me button.
      */
     @OnClick(R.id.emojify_button)
     public void emojifyMe() {
@@ -189,8 +187,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * OnClick method for the save button.
-     *
-     * @param view The save button.
      */
     @OnClick(R.id.save_button)
     public void saveMe() {
@@ -203,8 +199,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * OnClick method for the share button, saves and shares the new bitmap.
-     *
-     * @param view The share button.
      */
     @OnClick(R.id.share_button)
     public void shareMe() {
@@ -220,8 +214,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * OnClick for the clear button, resets the app to original state.
-     *
-     * @param view The clear button.
      */
     @OnClick(R.id.clear_button)
     public void clearImage() {
